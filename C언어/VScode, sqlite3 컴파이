@@ -1,0 +1,11 @@
+중복된 cppbuild 태스크 제거
+
+tasks.json에 같은 "label": "C/C++: gcc 활성 파일 빌드"가 여러 번 반복되어 있습니다.
+
+VSCode가 어떤 태스크를 실행할지 혼동할 수 있으니, 꼭 하나만 남기고 나머지는 삭제하세요.
+
+cppbuild 대신 shell task 사용
+
+cppbuild는 VSCode C++ 확장이 자동 생성한 태스크라 Windows toolchain과 연결되는 경우가 있습니다.
+
+WSL gcc를 확실히 쓰려면 type: "shell"로 지정하는 게 안정적입니다.
