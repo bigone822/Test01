@@ -20,3 +20,8 @@
 
 
 
+
+- 작성된 가상환경은 매번 활성화 시켜주면 된다
+
+source ~/venvs/influx/bin/activate
+
