@@ -4,6 +4,11 @@
 3. vcan0 인터페이스 활성화 (Up)
 #
 
+--------------------------------------
 sudo modprobe vcan
+
 sudo ip link add dev vcan0 type vcan
+
 sudo ip link set up vcan0 
+
+--------------------------------------
