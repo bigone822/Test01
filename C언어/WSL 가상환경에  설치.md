@@ -3,15 +3,19 @@
 
 # Bash
 1. venv 생성
+
     python3 -m venv ~/venvs/influx
 
 2. 가상환경 활성화
+
     source ~/venvs/influx/bin/activate
 
 3. 패키지 설치
+
     pip install influxdb-client
 
 4. 확인
+
     python -c "from influxdb_client import InfluxDBClient; print('OK')"
 
 
