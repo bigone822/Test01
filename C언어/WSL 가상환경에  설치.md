@@ -19,9 +19,9 @@
     python -c "from influxdb_client import InfluxDBClient; print('OK')"
 
 
-
+# 활성화
 
 - 작성된 가상환경은 매번 활성화 시켜주면 된다
 
-source ~/venvs/influx/bin/activate
+    source ~/venvs/influx/bin/activate
 
