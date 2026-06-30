@@ -3,8 +3,8 @@
 
 
 ==============
-"type": "shell", =============================> shell <br>
-            "label": "C/C++: gcc Active",  ===> 영문으로
+"type": "shell", =============================> shell </br>
+            "label": "C/C++: gcc Active",  ===> 영문으로 </br>
             "command": "/usr/bin/gcc",
 ================
             
