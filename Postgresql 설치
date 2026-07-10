@@ -1,4 +1,4 @@
-Markdown# WSL 환경에서 PostgreSQL 설치 및 설정 가이드
+# WSL 환경에서 PostgreSQL 설치 및 설정 가이드
 
 WSL(Windows Subsystem for Linux) 환경(Ubuntu 기준)에서 PostgreSQL을 설치하고 실행하는 방법과 초기 설정에 대한 가이드입니다.
 
