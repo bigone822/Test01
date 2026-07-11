@@ -9,7 +9,8 @@ sudo rm -f /etc/apt/sources.list.d/dbeaver.list
 ## 2. DBeaver 공식 GPG 키를 다시 안전하게 다운로드합니다.
 
 ```bash
-sudo wget -q -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/dbeaver.gpg.key
+sudo wget -q -O - https://dbeaver.io/debs/dbeaver.gpg.key
+sudo gpg --dearmor -o /usr/share/keyrings/dbeaver.gpg.key
 ```
 
 ## 3. 정확한 공식 APT 저장소 경로를 등록합니다.
