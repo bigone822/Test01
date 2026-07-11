@@ -1,13 +1,21 @@
 
 
 ## 1. 예전 등록 과정에서 꼬였을 수 있는 리스트 파일을 먼저 지웁니다.
+
+'''shell
 sudo rm -f /etc/apt/sources.list.d/dbeaver.list
+'''
 
 ## 2. DBeaver 공식 GPG 키를 다시 안전하게 다운로드합니다.
+
+'''shell
 sudo wget -q -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/dbeaver.gpg.key
+'''
 
 ## 3. 정확한 공식 APT 저장소 경로를 등록합니다.
+'''shell
 echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
+'''
 
 ## 4. 패키지 목록을 갱신합니다. (이제 에러 없이 dbeaver를 찾아냅니다)
 sudo apt-get update
