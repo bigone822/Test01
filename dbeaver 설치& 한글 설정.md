@@ -8,39 +8,41 @@ sudo rm -f /etc/apt/sources.list.d/dbeaver.list
 
 ## 2. DBeaver 공식 GPG 키를 다시 안전하게 다운로드합니다.
 
-'''shell
+```bash
 sudo wget -q -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/dbeaver.gpg.key
-'''
+```
 
 ## 3. 정확한 공식 APT 저장소 경로를 등록합니다.
-'''shell
+```bash
 echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
-'''
+```
 
 ## 4. 패키지 목록을 갱신합니다. (이제 에러 없이 dbeaver를 찾아냅니다)
+```bash
 sudo apt-get update
+```
 
 ## 5. DBeaver를 설치합니다.
 
-'''
+```bash
 sudo apt-get install dbeaver-ce
-'''
+```
 
----
+
 # 시스템 한글 폰트 설치 및 리프레시
 
 ## 1. 리눅스 표준 한글 폰트 패키지들을 설치합니다.
 가장 무난하고 깔끔한 네이버 나눔폰트와 구글 노토(Noto) 한글 폰트 패키지입니다. 터미널에 아래 명령어를 복사해 넣으세요.
-
+```bash
 sudo apt update
 sudo apt install -y fonts-nanum fonts-nanum-coding fonts-noto-cjk
-
+```
 
 ## 2. 설치 후 시스템의 폰트 캐시를 완전히 갱신합니다.
 새로 설치한 폰트를 시스템과 DBeaver가 즉시 인식할 수 있도록 폰트 인덱스를 강제로 재빌드합니다.
-
+```bash
 sudo fc-cache -f -v
-
+```
 ## 확인 및 조치 방법
 
 위 과정을 마치고 DBeaver를 완전히 종료했다가 다시 실행
