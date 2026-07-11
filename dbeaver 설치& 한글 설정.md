@@ -2,9 +2,9 @@
 
 ## 1. 예전 등록 과정에서 꼬였을 수 있는 리스트 파일을 먼저 지웁니다.
 
-'''bash
+```bash
 sudo rm -f /etc/apt/sources.list.d/dbeaver.list
-'''
+```
 
 ## 2. DBeaver 공식 GPG 키를 다시 안전하게 다운로드합니다.
 
