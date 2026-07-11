@@ -14,7 +14,8 @@ sudo wget -q -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo gpg --dearmor -
 
 ## 3. 정확한 공식 APT 저장소 경로를 등록합니다.
 ```bash
-echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
+echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/debs/dbeaver-ce /"
+sudo tee /etc/apt/sources.list.d/dbeaver.list
 ```
 
 ## 4. 패키지 목록을 갱신합니다. (이제 에러 없이 dbeaver를 찾아냅니다)
