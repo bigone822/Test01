@@ -13,27 +13,27 @@ echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/deb
 sudo apt-get update
 
 ## 5. DBeaver를 설치합니다.
+
 '''
 sudo apt-get install dbeaver-ce
 '''
 
 ---
 # 시스템 한글 폰트 설치 및 리프레시
----
-1. 리눅스 표준 한글 폰트 패키지들을 설치합니다.
+
+## 1. 리눅스 표준 한글 폰트 패키지들을 설치합니다.
 가장 무난하고 깔끔한 네이버 나눔폰트와 구글 노토(Noto) 한글 폰트 패키지입니다. 터미널에 아래 명령어를 복사해 넣으세요.
 
 sudo apt update
 sudo apt install -y fonts-nanum fonts-nanum-coding fonts-noto-cjk
 
 
-2. 설치 후 시스템의 폰트 캐시를 완전히 갱신합니다.
+## 2. 설치 후 시스템의 폰트 캐시를 완전히 갱신합니다.
 새로 설치한 폰트를 시스템과 DBeaver가 즉시 인식할 수 있도록 폰트 인덱스를 강제로 재빌드합니다.
 
 sudo fc-cache -f -v
 
-
-확인 및 조치 방법
+## 확인 및 조치 방법
 
 위 과정을 마치고 DBeaver를 완전히 종료했다가 다시 실행
 
