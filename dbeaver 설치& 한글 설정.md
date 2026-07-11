@@ -49,7 +49,8 @@ sudo fc-cache -f -v
 
 위 과정을 마치고 DBeaver를 완전히 종료했다가 다시 실행
 
-이제 상단 메뉴 Window → Preferences → User Interface → Regional Settings로 이동했을 때, 사각형 박스 대신 깔끔하게 'Korean (한국어)' 혹은 '한국어'라고 제대로 텍스트가 보이실 겁니다.
+상단 메뉴 Window → Preferences → User Interface → Regional Settings
+'Korean (한국어)' 혹은 '한국어'
 
 만약 메뉴는 한글로 바뀌었는데 쿼리를 작성하는 편집창(SQL Editor)의 폰트가 여전히 깨져 보인다면 다음과 같이 폰트를 수동으로 지정해 주시면 됩니다.
 
