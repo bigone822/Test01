@@ -2,7 +2,7 @@
 
 ## 1. 예전 등록 과정에서 꼬였을 수 있는 리스트 파일을 먼저 지웁니다.
 
-'''shell
+'''bash
 sudo rm -f /etc/apt/sources.list.d/dbeaver.list
 '''
 
