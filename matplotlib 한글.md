@@ -1,6 +1,6 @@
 ## OS 별 한글 설정
 
-'''python
+```python
 import matplotlib.pyplot as plt
 import platform
 
@@ -14,4 +14,4 @@ else: # Linux (Ubuntu 등)
 
 # 마이너스 기호(-)가 깨지는 현상 방지
 plt.rcParams['axes.unicode_minus'] = False
-'''
+```
