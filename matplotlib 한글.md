@@ -1,6 +1,6 @@
 ## OS 별 한글 설정
 
-''' python
+'''python
 import matplotlib.pyplot as plt
 import platform
 
