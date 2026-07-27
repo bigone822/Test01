@@ -91,6 +91,7 @@ Strategy 패턴은 서로 다른 결제 알고리즘을 별도의 클래스로 �
 
 ![Strategy 패턴 UML 클래스 다이어그램](images/strategy_class_diagram.png)
 
+
 핵심 관계는 다음과 같습니다.
 
 ```text
