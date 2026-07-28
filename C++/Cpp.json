@@ -1,0 +1,64 @@
+{
+   "C++ Main": {
+       "prefix": "main",
+       "body": [
+           "#include <iostream>",
+           "using namespace std;",
+           "",
+           "int main()",
+           "{",
+           "    $0",
+           "    return 0;",
+           "}"
+       ],
+       "description": "C++ Main Function"
+   },
+
+   "Vector": {
+       "prefix": "vec",
+       "body": [
+           "#include <vector>",
+           "vector<$1> $2;"
+       ],
+       "description": "vector template"
+   },
+
+   "Class": {
+       "prefix": "class",
+       "body": [
+           "class $1",
+           "{",
+           "private:",
+           "    $0",
+           "",
+           "public:",
+           "    $1()",
+           "    {",
+           "    }",
+           "};"
+       ],
+       "description": "Class Template"
+   },
+
+   "For Loop": {
+       "prefix": "fori",
+       "body": [
+           "for (int i = 0; i < $1; i++)",
+           "{",
+           "    $0",
+           "}"
+       ],
+       "description": "for loop"
+   },
+
+   "Struct": {
+       "prefix": "struct",
+       "body": [
+           "struct $1",
+           "{",
+           "    $0",
+           "};"
+       ],
+       "description": "Struct Template"
+   }
+}
